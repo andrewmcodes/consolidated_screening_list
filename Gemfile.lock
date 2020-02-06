@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    consolidated_screening_list (0.1.0)
+    consolidated_screening_list (0.0.1)
       dotenv (~> 2.7)
       iso_country_codes (~> 0.7)
-      rest-client (~> 2.1)
+      rest-client (~> 2)
       uuid (~> 2.3)
 
 GEM

@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
 
   # Dependencies
   spec.add_dependency "dotenv", "~> 2.7"
-  spec.add_dependency "rest-client", "~> 2.1"
+  spec.add_dependency "rest-client", "~> 2"
   spec.add_dependency "iso_country_codes", "~> 0.7"
   spec.add_dependency "uuid", "~> 2.3"
 end
