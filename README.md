@@ -1,44 +1,53 @@
 # ConsolidatedScreeningList
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/consolidated_screening_list`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'consolidated_screening_list'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install consolidated_screening_list
+A Ruby client for [Trade.gov's Consolidated Screening List](https://developer.trade.gov/consolidated-screening-list.html)
 
 ## Usage
 
-TODO: Write usage instructions here
+```sh
+client = ImportExport::Client.new :api_key => "12345"
+client.search :q => "smith"
+=> [
+  #<ImportExport::Result name="PRIDMORE-SMITH, BRAMWELL J.">,
+  #<ImportExport::Result name="PRIDMORE-SMITH, JOHN B.">
+]
 
-## Development
+client.search :name => "smith", :fuzzy_name => true
+=> [
+  #<ImportExport::Result name="PRIDMORE-SMITH, JOHN B.">,
+  #<ImportExport::Result name="PRIDMORE-SMITH, BRAMWELL J.">,
+  #<ImportExport::Result name="MID-SOUTH INVESTMENTS LIMITED">,
+  #<ImportExport::Result name="SOUTH-EAST MOVEMENT">,
+  ...
+]
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+NOTE: `api_key` defaults to `ENV["TRADE_API_KEY"]` if not specified.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Available parameters
+
+* `q`
+* `sources`
+* `countries` (defaults to all countries)
+* `address`
+* `name`
+* `fuzzy_name` (true or false)
+* `type`
+* `size` (number of results per page, defaults to 100)
+* `offset` (defaults to 0)
+
+For more information, see [the Consolidated Screening List API docs](https://developer.trade.gov/consolidated-screening-list.html).
+
+### Command line usage
+
+```sh
+import_export [NAME]
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/consolidated_screening_list. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/consolidated_screening_list/blob/master/CODE_OF_CONDUCT.md).
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the ConsolidatedScreeningList project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/consolidated_screening_list/blob/master/CODE_OF_CONDUCT.md).
+1. [Fork it](https://github.com/andrewmcodes/consolidated_screening_list/fork)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request

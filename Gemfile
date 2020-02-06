@@ -1,7 +1,14 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in consolidated_screening_list.gemspec
 gemspec
 
-gem "rake", "~> 12.0"
-gem "rspec", "~> 3.0"
+group :development, :test do
+  gem "standard", "~> 0.1"
+  gem "pry"
+  gem "rake"
+end
+
+group :test do
+  gem "rspec", "~> 3.0"
+  gem "webmock", "~> 3.8"
+end

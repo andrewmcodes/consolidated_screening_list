@@ -3,7 +3,7 @@ RSpec.describe ConsolidatedScreeningList do
     expect(ConsolidatedScreeningList::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "returns the user agent" do
+    expect(subject.user_agent).to match(/ConsolidatedScreeningList\/\d\.\d\.\d/)
   end
 end
