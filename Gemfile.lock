@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    consolidated_screening_list (0.0.1)
+    consolidated_screening_list (0.0.2)
       dotenv (~> 2.7)
       iso_country_codes (~> 0.7)
       rest-client (~> 2)
