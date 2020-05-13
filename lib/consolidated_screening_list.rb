@@ -19,7 +19,18 @@ module ConsolidatedScreeningList
 
   API_VERSION = "v1"
   PRODUCTION_URL = "https://api.trade.gov/gateway/#{API_VERSION}/consolidated_screening_list/".freeze
-
+  TYPES = %w[Individual Entity Vessel]
+  PARAMETERS = {
+    q: nil,
+    sources: Source.keys,
+    countries: Query.countries,
+    address: nil,
+    name: nil,
+    fuzzy_name: false,
+    type: nil,
+    size: 100,
+    offset: 0
+  }
   #
   # <Description>
   #
