@@ -1,5 +1,8 @@
 # ConsolidatedScreeningList
 
+![StandardRB](https://github.com/andrewmcodes/consolidated_screening_list/workflows/StandardRB/badge.svg)
+![Tests](https://github.com/andrewmcodes/consolidated_screening_list/workflows/Tests/badge.svg)
+
 A Ruby client for [Trade.gov's Consolidated Screening List](https://developer.trade.gov/consolidated-screening-list.html)
 
 ## Usage
