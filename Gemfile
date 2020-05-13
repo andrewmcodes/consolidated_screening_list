@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development, :test do
-  gem "standard", "~> 0.1"
+  gem "standard", "~> 0.4"
   gem "pry"
   gem "rake"
 end

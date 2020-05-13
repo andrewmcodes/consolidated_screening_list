@@ -1,10 +1,20 @@
 module ConsolidatedScreeningList
   class Query
     class << self
+      #
+      # <Description>
+      #
+      # @return [<Type>] <description>
+      #
       def countries
         @countries ||= IsoCountryCodes.all.map { |c| c.alpha2 }
       end
 
+      #
+      # <Description>
+      #
+      # @return [<Type>] <description>
+      #
       def endpoint
         @endpoint ||= URI.join(ConsolidatedScreeningList::API_BASE, "search").to_s
       end
@@ -28,6 +38,12 @@ module ConsolidatedScreeningList
       Vessel
     ]
 
+    #
+    # <Description>
+    #
+    # @param [<Type>] params <description>
+    # @param [<Type>] api_key <description>
+    #
     def initialize(params, api_key)
       params = {q: params} if params.is_a? String
       @params = PARAMETERS.merge(params)
@@ -42,6 +58,11 @@ module ConsolidatedScreeningList
       raise ArgumentError, "Invalid API key: #{invalid}" if invalid_api_key
     end
 
+    #
+    # <Description>
+    #
+    # @return [<Type>] <description>
+    #
     def call
       RestClient.get Query.endpoint, {
         :params => params,
@@ -52,6 +73,11 @@ module ConsolidatedScreeningList
 
     private
 
+    #
+    # <Description>
+    #
+    # @return [<Type>] <description>
+    #
     def params
       params = @params.clone
       params[:countries] = params[:countries].join(",")

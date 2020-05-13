@@ -20,6 +20,11 @@ module ConsolidatedScreeningList
 
   API_BASE = "https://api.trade.gov/gateway/v1/consolidated_screening_list/".freeze
 
+  #
+  # <Description>
+  #
+  # @return [<Type>] <description>
+  #
   def self.user_agent
     "ConsolidatedScreeningList/#{ConsolidatedScreeningList::VERSION}; +https://github.com/andrewmcodes/consolidated_screening_list)"
   end
