@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe ConsolidatedScreeningList::Query do
+RSpec.describe ConsolidatedScreeningList::Result do
   subject { ConsolidatedScreeningList::Result.new "foo" => "bar" }
 
   it "stores the data" do

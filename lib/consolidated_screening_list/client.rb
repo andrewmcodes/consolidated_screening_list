@@ -33,7 +33,7 @@ module ConsolidatedScreeningList
     # @return [Array] The search results.
     #
     def search(params = {})
-      parse_response Query.new(params, api_key).call
+      parse_response Query.new(params: params, api_key: api_key).call
     end
 
     private

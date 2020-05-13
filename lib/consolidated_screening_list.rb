@@ -4,7 +4,6 @@ require "dotenv"
 require "uri"
 require "logger"
 require "json"
-require "uuid"
 
 require "consolidated_screening_list/version"
 require "consolidated_screening_list/source"

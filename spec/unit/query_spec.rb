@@ -1,7 +1,16 @@
 require "spec_helper"
 
 RSpec.describe ConsolidatedScreeningList::Query do
-  subject { ConsolidatedScreeningList::Query.new({q: "smith"}, "e835b25e-3ac0-4bbf-ba45-8a4b2eca5237") }
+  let(:api_key) { SecureRandom.uuid }
+  subject { ConsolidatedScreeningList::Query.new(params: {q: "smith"}, api_key: api_key) }
+
+  it "raises ArgumentError if api_key is invalid" do
+    expect { ConsolidatedScreeningList::Query.new(params: {q: "smith"}, api_key: "foo") }.to raise_error(ArgumentError)
+  end
+
+  # it "raises ArgumentError if countries are invalid" do
+  #   expect { ConsolidatedScreeningList::Query.new(params: {q: "smith", countries: ["NC"]}, api_key: api_key) }.to raise_error(ArgumentError)
+  # end
 
   it "returns the country list" do
     expect(ConsolidatedScreeningList::Query.countries.count).to eql(249)
@@ -18,7 +27,7 @@ RSpec.describe ConsolidatedScreeningList::Query do
   end
 
   it "accepts params as a string" do
-    query = ConsolidatedScreeningList::Query.new("smith", "e835b25e-3ac0-4bbf-ba45-8a4b2eca5237")
+    query = ConsolidatedScreeningList::Query.new(params: "smith", api_key: api_key)
     expect(query.instance_variable_get("@params")[:q]).to eql("smith")
   end
 
