@@ -19,7 +19,7 @@ module ConsolidatedScreeningList
       fuzzy_name: false,
       type: nil,
       size: 100,
-      offset: 0,
+      offset: 0
     }
 
     TYPES = %w[
@@ -46,7 +46,7 @@ module ConsolidatedScreeningList
       RestClient.get Query.endpoint, {
         :params => params,
         "Authorization" => "Bearer #{@api_key}",
-        "User-Agent" => ConsolidatedScreeningList.user_agent,
+        "User-Agent" => ConsolidatedScreeningList.user_agent
       }
     end
 
