@@ -16,7 +16,7 @@ module ConsolidatedScreeningList
       # @return [<Type>] <description>
       #
       def endpoint
-        @endpoint ||= URI.join(ConsolidatedScreeningList::API_BASE, "search").to_s
+        @endpoint ||= URI.join(ConsolidatedScreeningList::PRODUCTION_URL, "search").to_s
       end
     end
 

@@ -18,7 +18,8 @@ RestClient.log = STDOUT unless ENV["DEBUG"].to_s.empty?
 module ConsolidatedScreeningList
   class Error < StandardError; end
 
-  API_BASE = "https://api.trade.gov/gateway/v1/consolidated_screening_list/".freeze
+  API_VERSION = "v1"
+  PRODUCTION_URL = "https://api.trade.gov/gateway/#{API_VERSION}/consolidated_screening_list/".freeze
 
   #
   # <Description>

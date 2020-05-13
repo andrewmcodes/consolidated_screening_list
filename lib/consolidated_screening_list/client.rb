@@ -17,22 +17,20 @@ module ConsolidatedScreeningList
     attr_reader :api_key
 
     #
-    # <Description>
+    # ConsolidatedScreeningList::Client initializer you receive from
     #
-    # @param [<Type>] options <description>
-    # @option options [<Type>] :<key> <description>
+    # @param [String] api_key The CSL API key you receive from api.trade.gov
     #
-    def initialize(options = {})
-      @api_key = options[:api_key] || ENV["TRADE_API_KEY"]
+    def initialize(api_key: nil)
+      @api_key = api_key
     end
 
     #
     # <Description>
     #
-    # @param [<Type>] params <description>
-    # @option params [<Type>] :<key> <description>
+    # @option params [Hash] :<key> <description>
     #
-    # @return [<Type>] <description>
+    # @return [Array] The search results.
     #
     def search(params = {})
       parse_response Query.new(params, api_key).call

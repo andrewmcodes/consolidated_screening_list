@@ -1,5 +1,6 @@
 module ConsolidatedScreeningList
   class Source
+    # @return [Hash] Available Screening Lists where the key is the abbreviation and value is the full name.
     SOURCES = {
       "CAP" => "Correspondent Account or Payable-Through Account Sanctions (CAPTA)",
       "DPL" => "Denied Persons List",
