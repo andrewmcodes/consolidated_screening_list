@@ -26,8 +26,6 @@ client.search :name => "smith", :fuzzy_name => true
 ]
 ```
 
-NOTE: `api_key` defaults to `ENV["TRADE_API_KEY"]` if not specified.
-
 ### Available parameters
 
 * `q`
@@ -45,7 +43,7 @@ For more information, see [the Consolidated Screening List API docs](https://dev
 ### Command line usage
 
 ```sh
-import_export [NAME]
+consolidated_screening_list [NAME]
 ```
 
 ## Contributing
