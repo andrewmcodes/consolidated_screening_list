@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": false,
+  "[ruby]": {
+    "editor.formatOnSave": true
+  },
+  "ruby.useLanguageServer": true,
+  "ruby.lintDebounceTime": 1500,
+  "ruby.useBundler": true,
+  "ruby.lint": {
+    "standard": {
+      "useBundler": true
+    }
+  },
+  "ruby.format": "standard",
+  "git.ignoreLimitWarning": true,
+  "solargraph.diagnostics": true
+}

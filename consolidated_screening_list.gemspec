@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
       "allowed_push_host" => "https://rubygems.org",
       "bug_tracker_uri" => "#{spec.homepage}/issues",
       "homepage_uri" => spec.homepage,
-      "source_code_uri" => spec.homepage,
+      "source_code_uri" => spec.homepage
     }
   end
   spec.files = Dir["lib/**/*", "README.md", "LICENSE.txt"]
@@ -24,8 +24,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Dependencies
-  spec.add_dependency "dotenv", "~> 2.7"
   spec.add_dependency "rest-client", "~> 2"
   spec.add_dependency "iso_country_codes", "~> 0.7"
-  spec.add_dependency "uuid", "~> 2.3"
 end
