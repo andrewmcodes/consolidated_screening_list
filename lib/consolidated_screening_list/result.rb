@@ -12,9 +12,9 @@ module ConsolidatedScreeningList
     end
 
     #
-    # <Description>
+    # [#<ConsolidatedScreeningList::Result name="JOHN B. PRIDMORE-SMITH">]
     #
-    # @return [<Type>] <description>
+    # @return [String] <description>
     #
     def inspect
       "#<ConsolidatedScreeningList::Result name=\"#{name}\">"

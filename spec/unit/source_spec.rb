@@ -3,6 +3,10 @@ require "spec_helper"
 RSpec.describe ConsolidatedScreeningList::Source do
   subject { ConsolidatedScreeningList::Source.all.first }
 
+  it "has a const named SOURCES" do
+    expect(ConsolidatedScreeningList::Source::SOURCES.keys.count).to eql(12)
+  end
+
   it "returns all sources" do
     expect(ConsolidatedScreeningList::Source.all.count).to eql(12)
   end
