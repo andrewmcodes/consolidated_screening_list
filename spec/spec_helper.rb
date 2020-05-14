@@ -1,8 +1,9 @@
-if ENV["COVERAGE"] || ENV["CI"]
+if ENV["COVERAGE"] || ENV["GITHUB_ACTIONS"]
   require "simplecov"
   require "coveralls"
 
   SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+    SimpleCov::Formatter::SimpleFormatter,
     SimpleCov::Formatter::HTMLFormatter,
     Coveralls::SimpleCov::Formatter
   ])
