@@ -96,6 +96,35 @@ consolidated_screening_list [NAME]
 
 Bug reports and pull requests are welcome on GitHub at [https://github.com/andrewmcodes/consolidated_screening_list](https://github.com/andrewmcodes/consolidated_screening_list).
 
+### Commit message
+
+This project will be following [Coventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) moving forward.
+
+
+The commit message should be structured as follows:
+
+```sh
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+Valid types:
+
+- build
+- ci
+- chore
+- docs
+- feat
+- fix
+- perf
+- refactor
+- revert
+- style
+- test
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
