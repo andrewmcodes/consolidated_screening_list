@@ -1,0 +1,5 @@
+feature: ['feature:*', 'feat:*', 'perf:*', 'style:*']
+fix: ['fix:*', 'issue:*', 'revert:*']
+maintenance: ['chore:*', 'ci:*', 'refactor:*', 'test:*']
+docs: ['docs:*', 'document:*']
+dependencies: ['upgrade:*']
