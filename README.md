@@ -20,7 +20,39 @@
 
 A Ruby client for [Trade.gov's Consolidated Screening List](https://developer.trade.gov/consolidated-screening-list.html)
 
+
+## Attribution
+
+This gem was originally forked from [benbalter/import_export](https://github.com/benbalter/import_export).
+
+## Installation
+
+Adding to a gem:
+
+```ruby
+# my-cool-gem.gemspec
+Gem::Specification.new do |spec|
+  # ...
+  spec.add_dependency "consolidated_screening_list", "~> 0.0.2"
+  # ...
+end
+```
+
+Or adding to your project:
+
+```ruby
+# Gemfile
+gem "consolidated_screening_list", "~> 0.0.2"
+```
+
+### Supported Ruby versions
+
+- Ruby (MRI) >= 2.3.0
+<!-- - JRuby >= 9.2.9 -->
+
 ## Usage
+
+:warning: These are incomplete
 
 ```sh
 client = ImportExport::Client.new :api_key => "12345"
@@ -62,12 +94,8 @@ consolidated_screening_list [NAME]
 
 ## Contributing
 
-1. [Fork it](https://github.com/andrewmcodes/consolidated_screening_list/fork)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Bug reports and pull requests are welcome on GitHub at [https://github.com/andrewmcodes/consolidated_screening_list](https://github.com/andrewmcodes/consolidated_screening_list).
 
-## Attribution
+## License
 
-This gem was originally forked from [benbalter/import_export](https://github.com/benbalter/import_export).
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

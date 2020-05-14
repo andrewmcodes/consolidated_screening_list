@@ -1,0 +1,5 @@
+feature: ['feature/*', 'feat/*', 'add/*', 'enhancement/*']
+fix: ['fix/*', 'issue/*']
+maintenance: ['chore/*']
+docs: ['docs/*', 'document/*']
+dependencies: ['upgrade/*']
