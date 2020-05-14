@@ -2,13 +2,14 @@ source "https://rubygems.org"
 
 gemspec
 
+gem "standard", "~> 0.4"
+
 group :development, :test do
-  gem "standard", "~> 0.4"
-  gem "pry"
-  gem "rake"
+  gem "pry", "~> 0.13"
 end
 
-group :test do
-  gem "rspec", "~> 3.0"
-  gem "webmock", "~> 3.8"
+group :metrics do
+  gem "coveralls", "~> 0.8.23"
+  gem "simplecov", "~> 0.16.1"
+  gem "yardstick", "~> 0.9.9"
 end

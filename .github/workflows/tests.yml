@@ -30,4 +30,9 @@ jobs:
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
     - name: Run ruby tests
-      run: bin/test
+      run: bundle exec rake ci
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

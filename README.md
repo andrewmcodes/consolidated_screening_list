@@ -1,8 +1,21 @@
 # ConsolidatedScreeningList
 
+[![Gem Version](https://badge.fury.io/rb/consolidated_screening_list.svg)][gem]
+[![Maintainability](https://api.codeclimate.com/v1/badges/a3879f6457471eb95618/maintainability)][codeclimate]
+[![Coverage Status](https://coveralls.io/repos/github/andrewmcodes/consolidated_screening_list/badge.svg)][coverage]
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a3879f6457471eb95618/test_coverage)][coverage]
+[![Inline docs](http://inch-ci.org/github/andrewmcodes/consolidated_screening_list.svg?branch=master)][inchpages]
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)][projectstatus]
 ![StandardRB](https://github.com/andrewmcodes/consolidated_screening_list/workflows/StandardRB/badge.svg)
 ![Tests](https://github.com/andrewmcodes/consolidated_screening_list/workflows/Tests/badge.svg)
-[![Inline docs](http://inch-ci.org/github/andrewmcodes/consolidated_screening_list.svg?branch=master)](http://inch-ci.org/github/andrewmcodes/consolidated_screening_list)
+
+[gem]: http://badge.fury.io/rb/consolidated_screening_list
+[travis]: http://travis-ci.org/andrewmcodes/consolidated_screening_list
+[codeclimate]: https://codeclimate.com/github/andrewmcodes/consolidated_screening_list/maintainability
+[coverage]: https://coveralls.io/github/andrewmcodes/consolidated_screening_list
+[inchpages]: http://inch-ci.org/github/andrewmcodes/consolidated_screening_list
+[projectstatus]: https://www.repostatus.org/#active
+
 
 A Ruby client for [Trade.gov's Consolidated Screening List](https://developer.trade.gov/consolidated-screening-list.html)
 

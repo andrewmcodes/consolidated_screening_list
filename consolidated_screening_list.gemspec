@@ -26,4 +26,10 @@ Gem::Specification.new do |spec|
   # Dependencies
   spec.add_dependency "rest-client", "~> 2"
   spec.add_dependency "iso_country_codes", "~> 0.7"
+
+  # Development Dependencies
+  spec.add_development_dependency "bundler", ">= 1.5.0"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "webmock", "~> 3.8"
 end
