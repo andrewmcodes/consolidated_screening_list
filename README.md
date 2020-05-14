@@ -17,9 +17,7 @@
 [inchpages]: http://inch-ci.org/github/andrewmcodes/consolidated_screening_list
 [projectstatus]: https://www.repostatus.org/#active
 
-
 A Ruby client for [Trade.gov's Consolidated Screening List](https://developer.trade.gov/consolidated-screening-list.html)
-
 
 ## Attribution
 
@@ -48,7 +46,6 @@ gem "consolidated_screening_list", "~> 0.0.2"
 ### Supported Ruby versions
 
 - Ruby (MRI) >= 2.3.0
-<!-- - JRuby >= 9.2.9 -->
 
 ## Usage
 
@@ -74,15 +71,15 @@ client.search :name => "smith", :fuzzy_name => true
 
 ### Available parameters
 
-* `q`
-* `sources`
-* `countries` (defaults to all countries)
-* `address`
-* `name`
-* `fuzzy_name` (true or false)
-* `type`
-* `size` (number of results per page, defaults to 100)
-* `offset` (defaults to 0)
+- `q`
+- `sources`
+- `countries` (defaults to all countries)
+- `address`
+- `name`
+- `fuzzy_name` (true or false)
+- `type`
+- `size` (number of results per page, defaults to 100)
+- `offset` (defaults to 0)
 
 For more information, see [the Consolidated Screening List API docs](https://developer.trade.gov/consolidated-screening-list.html).
 
@@ -99,7 +96,6 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/andre
 ### Commit message
 
 This project will be following [Coventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) moving forward.
-
 
 The commit message should be structured as follows:
 

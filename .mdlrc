@@ -1,0 +1,5 @@
+# "~MD013" - line length should be no more than 80 characters
+# "~MD026" - trailing punctuation in header
+# "~MD033" - inner HTML
+
+rules "~MD013", "~MD026", "~MD033"

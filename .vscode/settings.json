@@ -13,5 +13,11 @@
   },
   "ruby.format": "standard",
   "git.ignoreLimitWarning": true,
-  "solargraph.diagnostics": true
+  "solargraph.diagnostics": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  },
+  "markdownlint.ignore": [
+    "CODE_OF_CONDUCT.md",
+  ]
 }
