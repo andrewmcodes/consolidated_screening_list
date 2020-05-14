@@ -8,6 +8,7 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)][projectstatus]
 ![StandardRB](https://github.com/andrewmcodes/consolidated_screening_list/workflows/StandardRB/badge.svg)
 ![Tests](https://github.com/andrewmcodes/consolidated_screening_list/workflows/Tests/badge.svg)
+![Yardstick](https://github.com/andrewmcodes/consolidated_screening_list/workflows/Yardstick/badge.svg)
 
 [gem]: http://badge.fury.io/rb/consolidated_screening_list
 [travis]: http://travis-ci.org/andrewmcodes/consolidated_screening_list
