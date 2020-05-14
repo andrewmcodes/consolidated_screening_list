@@ -12,6 +12,5 @@ end
 group :metrics do
   gem "coveralls", "~> 0.8.23"
   gem "simplecov", "~> 0.16.1"
-  gem "simplecov-lcov", "~> 0.7.0"
   gem "yardstick", "~> 0.9.9"
 end

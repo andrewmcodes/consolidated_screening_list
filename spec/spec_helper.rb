@@ -1,10 +1,10 @@
 if ENV["COVERAGE"] || ENV["GITHUB_ACTIONS"]
   require "simplecov"
-  require "simplecov-lcov"
   require "coveralls"
 
   SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
-    SimpleCov::Formatter::LcovFormatter,
+    SimpleCov::Formatter::SimpleFormatter,
+    SimpleCov::Formatter::HTMLFormatter,
     Coveralls::SimpleCov::Formatter
   ])
 
