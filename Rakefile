@@ -1,5 +1,6 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
+require "yaml"
 require "yardstick/rake/measurement"
 require "yardstick/rake/verify"
 
