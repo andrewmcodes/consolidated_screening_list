@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/consolidated_screening_list.svg)][gem]
 [![Maintainability](https://api.codeclimate.com/v1/badges/a3879f6457471eb95618/maintainability)][codeclimate]
 [![Coverage Status](https://coveralls.io/repos/github/andrewmcodes/consolidated_screening_list/badge.svg)][coverage]
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a3879f6457471eb95618/test_coverage)][coverage]
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a3879f6457471eb95618/test_coverage)][codeclimate]
 [![Inline docs](http://inch-ci.org/github/andrewmcodes/consolidated_screening_list.svg?branch=master)][inchpages]
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)][projectstatus]
 ![StandardRB](https://github.com/andrewmcodes/consolidated_screening_list/workflows/StandardRB/badge.svg)
