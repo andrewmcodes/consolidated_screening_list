@@ -65,21 +65,21 @@ RSpec.describe ConsolidatedScreeningList::Query do
   end
 
   it "accepts params as a hash" do
-    expect(subject.instance_variable_get("@params")[:q]).to eql("smith")
+    expect(subject.instance_variable_get(:@params)[:q]).to eql("smith")
   end
 
   it "accepts params as a string" do
     query = ConsolidatedScreeningList::Query.new(params: "smith", api_key: api_key)
-    expect(query.instance_variable_get("@params")[:q]).to eql("smith")
+    expect(query.instance_variable_get(:@params)[:q]).to eql("smith")
   end
 
   it "merges the default params" do
-    expect(subject.instance_variable_get("@params")[:offset]).to eql(0)
+    expect(subject.instance_variable_get(:@params)[:offset]).to eql(0)
   end
 
   it "builds the param lists" do
-    expect(subject.send(:params)[:countries]).to match(/AF\,AX/)
-    expect(subject.send(:params)[:sources]).to match(/CAP\,DPL/)
+    expect(subject.send(:params)[:countries]).to match(/AF,AX/)
+    expect(subject.send(:params)[:sources]).to match(/CAP,DPL/)
   end
 
   it "strips empty params" do

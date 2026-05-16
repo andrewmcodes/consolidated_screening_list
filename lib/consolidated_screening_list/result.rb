@@ -46,11 +46,7 @@ module ConsolidatedScreeningList
     # @return [<Type>] <description>
     #
     def respond_to_missing?(method_name, include_private = false)
-      if data.key?(method_name.to_s)
-        true
-      else
-        super
-      end
+      data.key?(method_name.to_s) || super
     end
   end
 end

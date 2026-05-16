@@ -2,15 +2,14 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "standard", "~> 0.4"
-gem "mdl", "~> 0.9.0"
+gem "standard", "~> 1.0"
+gem "mdl", "~> 0.13"
 
 group :development, :test do
-  gem "pry", "~> 0.13"
+  gem "pry", "~> 0.15"
 end
 
 group :metrics do
-  gem "coveralls", "~> 0.8.23"
-  gem "simplecov", "~> 0.16.1"
-  gem "yardstick", "~> 0.9.9"
+  gem "simplecov", "~> 0.22"
+  gem "yardstick", "~> 0.9"
 end

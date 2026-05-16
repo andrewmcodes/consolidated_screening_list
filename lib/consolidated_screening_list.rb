@@ -10,7 +10,7 @@ require "consolidated_screening_list/result"
 require "consolidated_screening_list/client"
 require "consolidated_screening_list/query"
 
-RestClient.log = STDOUT unless ENV["DEBUG"].to_s.empty?
+RestClient.log = $stdout unless ENV["DEBUG"].to_s.empty?
 
 module ConsolidatedScreeningList
   class Error < StandardError; end

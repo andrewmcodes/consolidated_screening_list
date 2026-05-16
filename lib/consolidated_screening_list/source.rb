@@ -36,7 +36,7 @@ module ConsolidatedScreeningList
       def find_by_key(key)
         all.find { |source| source.key == key }
       end
-      alias [] find_by_key
+      alias_method :[], :find_by_key
 
       #
       # <Description>
